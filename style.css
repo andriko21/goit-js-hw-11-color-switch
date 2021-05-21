@@ -1,0 +1,25 @@
+.btn-start {
+  padding: 5px 8px;
+  border: transparent;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: teal;
+  transition: all 250ms linear;
+}
+.btn-start:hover {
+  background-color: greenyellow;
+}
+
+.btn-stop {
+  padding: 5px 8px;
+  border: transparent;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(253, 108, 198);
+  transition: all 250ms linear;
+}
+.btn-stop:hover {
+  background-color: red;
+}
