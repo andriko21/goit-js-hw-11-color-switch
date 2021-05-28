@@ -22,6 +22,8 @@ function onStartBtnClick() {
   refs.startBtn.removeEventListener("click", onStartBtnClick);
   colorSwitchID = setInterval(randomColorBody, 1000);
   refs.stopBtn.addEventListener("click", onStopBtnClick);
+  refs.startBtn.disabled = true;
+
 }
 refs.startBtn.addEventListener("click", onStartBtnClick);
 
@@ -29,4 +31,6 @@ function onStopBtnClick() {
   clearInterval(colorSwitchID);
   refs.stopBtn.removeEventListener("click", onStopBtnClick);
   refs.startBtn.addEventListener("click", onStartBtnClick);
+  refs.startBtn.disabled = false;
+
 }
